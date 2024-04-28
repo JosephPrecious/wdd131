@@ -1,6 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
 /* Reset default margin and padding */
 * {
     margin: 0;
@@ -10,7 +7,7 @@
 
 /* Body styles */
 body {
-    font-family: 'Arial', sans-serif; /* Fallback font */
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     line-height: 1.6;
     background-color: #f0f0f0; /* Light gray background */
@@ -83,11 +80,12 @@ main {
 
 .card p {
     margin-bottom: 20px;
+    font-family: #1E3A5F;
 }
 
 /* Footer styles */
 footer {
-    background-color: #1E3A5F; /* Dark background color */
+    background-color: var(--primary-color); /* Dark background color */
     color: #fff; /* White text */
     padding: 20px;
     text-align: center;
