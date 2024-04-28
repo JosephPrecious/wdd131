@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif; /* Fallback font */
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Light gray background */
+    color:  #333; /* Dark gray text */
+}
+
+/* Header styles */
+header {
+    background-color: #1E3A5F; /* Dark background color */
+    color: #fff; /* White text */
+    padding: 20px;
+    font-size:large;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+nav ul {
+    display: flex; /* Flex layout */
+    list-style-type: none; /* Remove bullet points */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+/* Main styles */
+main {
+    max-width: 800px; /* Limit width of main content */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); /* Shadow effect */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    background-color: #1E3A5F;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1E3A5F; /* Dark background color */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
