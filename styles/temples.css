@@ -82,10 +82,6 @@ footer {
         outline: none;
     }
 
-    .nav-toggle:hover {
-        color: #ccc;
-    }
-
     .show-menu {
         display: block;
     }
