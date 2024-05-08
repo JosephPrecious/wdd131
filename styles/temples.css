@@ -1,0 +1,111 @@
+/* temples.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    position: 0a;    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px; 
+    text-align: center;
+}
+
+/* temples.css */
+
+/* Mobile view */
+@media (min-width: 0px) and (max-width: 767px){
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        display: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul.show-menu {
+        display: block;
+
+    }
+
+    .nav-toggle {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav-toggle:focus {
+        outline: none;
+    }
+
+    .nav-toggle:hover {
+        color: #ccc;
+    }
+
+    .show-menu {
+        display: block;
+    }
+
+    nav ul.show-menu {
+        margin-top: 10px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    figure {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    figure img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        margin-top: 10px;
+        font-style: italic;
+    }
+}

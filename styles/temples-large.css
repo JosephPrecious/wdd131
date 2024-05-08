@@ -1,0 +1,37 @@
+/* temples-large.css */
+
+/* Larger view */
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between; /* Align header content to the start and end */
+        align-items: center; /* Vertically center header content */
+        padding: 20px;
+    }
+
+    .nav-toggle {
+        display: none; /* Hide the hamburger icon in larger views */
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    figure img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        margin-top: 10px;
+        font-style: italic;
+    }
+}
