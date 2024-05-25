@@ -1,0 +1,80 @@
+:root {
+    --primary: #FFD700;
+    --secondary: #09b470;
+    --tetiary:#FFD700;
+    --others: #FFFFFF;
+    --icon: url("images/naija-sun.svg")
+}
+
+* {
+    margin: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+main {
+    position: relative;
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(34, 31, 31);
+    background-color: var(--secondary);
+    padding: 1rem;
+    max-width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    background-color: var(--others);
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+#data-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    padding: 20px;
+    border-top: solid var(--others) 1px;
+}
+
+#data-card h2 {
+    padding-bottom: 20px;
+}
+
+.table-title {
+    font-weight: bold;
+    padding: 4px;
+}
+
+td:last-child {
+    text-align: left;
+}
+
+#weather-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    padding: 20px;
+    border-top: solid var(--secondary) 3px;
+}
+
+#weather-icon {
+    max-width: 30%;
+}
+
+footer {
+    background-color: var(--secondary);
+    color:rgb(34, 31, 31);
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 100%;
+}
