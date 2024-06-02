@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #8f8f8f;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 5em;
+}
+
+form{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: rgb(223, 223, 223);
+    display: grid;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2em;
+    color: #ccc;
+}
+
+.rating input:checked ~ label {
+    color: #f0c30f;
+}
+
+.rating input:hover ~ label {
+    color: #f0c30f;
+}
+
+.rating label:hover, .rating label:hover ~ label {
+    color: #f0c30f;
+}
