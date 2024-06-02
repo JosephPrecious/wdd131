@@ -71,6 +71,7 @@ const temples = [
     }
 ];
 
+// 
 document.addEventListener('DOMContentLoaded', () => {
     const templeCardsContainer = document.getElementById('temple-cards');
     const homeLink = document.getElementById('home');
@@ -78,6 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const newLink = document.getElementById('new');
     const largeLink = document.getElementById('large');
     const smallLink = document.getElementById('small');
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('nav ul');
 
     const displayTemples = (temples) => {
         templeCardsContainer.innerHTML = '';
@@ -119,25 +122,14 @@ document.addEventListener('DOMContentLoaded', () => {
         displayTemples(filteredTemples);
     };
 
-    homeLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        filterTemples('');
-    });
-    oldLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        filterTemples('old');
-    });
-    newLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        filterTemples('new');
-    });
-    largeLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        filterTemples('large');
-    });
-    smallLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        filterTemples('small');
+    homeLink.addEventListener('click', () => filterTemples(''));
+    oldLink.addEventListener('click', () => filterTemples('old'));
+    newLink.addEventListener('click', () => filterTemples('new'));
+    largeLink.addEventListener('click', () => filterTemples('large'));
+    smallLink.addEventListener('click', () => filterTemples('small'));
+
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show-menu');
     });
 
     // Display all temples by default on load
