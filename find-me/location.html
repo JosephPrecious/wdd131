@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Me - Locations</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Okoroji Precious. 
+    The locations page provides information about different geographical areas covered by the 'Find Me' website.
+    It includes a map feature that allows users to see directions and find locations easily.">
+    <meta name="author" content="Okoroji Precious">
+    <link rel="stylesheet" href="styles/find-me.css">
+    <script src="scripts/find-me.js" defer></script>
+    <script src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15884.592624371915!2d7.492069938623054!3d5.545039446304568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1712588430873!5m2!1sen!2sng" async defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Find Me</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="location.html">Locations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="locations" class="container">
+            <h2>Locations</h2>
+            <div class="locations">
+                <div class="location">
+                    <img src="images/New-York.jpeg" alt="New York" loading="lazy">
+                    <p>New York</p>
+                </div>
+                <div class="location">
+                    <img src="images/San-Francisco.jpeg" alt="San Francisco" loading="lazy">
+                    <p>San Francisco</p>
+                </div>
+                <div class="location">
+                    <img src="images/Los-Angeles.jpeg" alt="Los Angeles" loading="lazy">
+                    <p>Los Angeles</p>
+                </div>
+                <!-- Add more locations as needed -->
+            </div>
+        </section>
+        <section id="map" class="container">
+            <h2>Find Your Way</h2>
+            <div id="google-map"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Find Me. All rights reserved.</p>
+            <nav class="social-links">
+                <a href="https://facebook.com">
+                    <img src="images/facebook_icon.webp" alt="Facebook">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram_icon.webp" alt="Instagram">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter_icon.webp" alt="Twitter">
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
